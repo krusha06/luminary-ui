@@ -62,7 +62,7 @@ luminary-ui/
 Clone and open — no build step needed:
 
 ```bash
-git clone https://github.com/yourusername/luminary-ui.git
+git clone https://github.com/krusha06/luminary-ui.git
 cd luminary-ui
 open index.html
 ```
