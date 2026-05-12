@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luminary UI — Component Library</title>
+<meta name="description" content="A meticulously crafted dark-first component library. 15 production-ready components. Zero dependencies.">
+<meta property="og:title" content="Luminary UI — Component Library">
+<meta property="og:description" content="Beautiful UI. Zero Compromise. A dark-first component library for modern interfaces.">
+<meta property="og:type" content="website">
+
+<!-- Fonts: Space Grotesk (headings) + Manrope (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Luminary UI</div>
+  <div class="nav-links">
+    <a href="#components">Components</a>
+    <a href="#features">Features</a>
+    <a href="https://github.com" target="_blank">GitHub</a>
+    <a href="https://npmjs.com" target="_blank">npm</a>
+  </div>
+  <button class="nav-cta">Get Started →</button>
+</nav>
+
+<div class="page">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-orb hero-orb1"></div>
+    <div class="hero-orb hero-orb2"></div>
+    <div class="hero-orb hero-orb3"></div>
+    <div class="hero-badge"><span class="dot"></span>v1.0 — Now Available</div>
+    <h1><span class="gradient-text">Beautiful UI.<br>Zero Compromise.</span></h1>
+    <p class="hero-sub">A meticulously crafted component library for modern interfaces. Dark by default. Animated by design.</p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="document.getElementById('components').scrollIntoView({behavior:'smooth'})">Browse Components →</button>
+      <button class="btn-ghost">View on GitHub</button>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">15</div><div class="stat-label">Components</div></div>
+      <div class="stat"><div class="stat-num">3kb</div><div class="stat-label">Gzipped</div></div>
+      <div class="stat"><div class="stat-num">A11y</div><div class="stat-label">Accessible</div></div>
+      <div class="stat"><div class="stat-num">MIT</div><div class="stat-label">License</div></div>
+    </div>
+  </section>
+
+  <!-- COMPONENTS -->
+  <section class="section" id="components">
+    <div class="reveal">
+      <span class="section-tag">Components</span>
+      <h2 class="section-title">Everything you need,<br>nothing you don't.</h2>
+      <p class="section-sub">Every component is animated, accessible, and designed to work in dark environments out of the box.</p>
+    </div>
+
+    <div class="comp-grid" id="comp-grid">
+
+      <!-- 1. BUTTONS -->
+      <div class="comp-card reveal">
+        <div class="comp-preview">
+          <div class="btns-demo">
+            <button class="c-btn c-btn-solid">Get Started <span class="btn-icon">→</span></button>
+            <button class="c-btn c-btn-outline">Learn More</button>
+            <button class="c-btn c-btn-ghost2">♥ Favorite</button>
+            <button class="c-btn c-btn-success">✓ Confirmed</button>
+          </div>
+        </div>
+        <div class="comp-info">
+          <div class="comp-name">Buttons</div>
+          <div class="comp-desc">Solid, outline, ghost, and semantic variants with hover lift animations.</div>
+          <div class="comp-tags"><span class="comp-tag">interactive</span><span class="comp-tag">animated</span></div>
+        </div>
+      </div>
+
+      <!-- 2. CARDS -->
+      <div class="comp-card reveal">
+        <div class="comp-preview" style="padding: 1.25rem;">
+          <div class="cards-demo">
+            <div class="ui-card">
+              <div class="card-header">
+                <div class="card-avatar">JD</div>
+                <div><div class="card-user-name">Jordan Davis</div><div class="card-user-role">Product Designer</div></div>
+              </div>
+              <div class="card-body">"This component library saved our team weeks of work. Absolutely stunning."</div>
+              <div class="card-stats">
+                <div><div class="card-stat-num">2.4k</div><div class="card-stat-label">Projects</div></div>
+                <div><div class="card-stat-num">98%</div><div class="card-stat-label">Satisfaction</div></div>
+                <div><div class="card-stat-num">$1.2M</div><div class="card-stat-label">Revenue</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comp-info">
+          <div class="comp-name">Cards</div>
+          <div class="comp-desc">Profile, stat, and content cards with subtle hover states.</div>
+          <div class="comp-tags"><span class="comp-tag">layout</span><span class="comp-tag">data</span></div>
+        </div>
+      </div>
+
+      <!-- 3. BADGES -->
+      <div class="comp-card reveal">
+        <div class="comp-preview">
+          <div class="badges-demo">
+            <span class="badge badge-purple"><span class="badge-dot"></span>Active</span>
+            <span class="badge badge-pink"><span class="badge-dot"></span>Featured</span>
+            <span class="badge badge-teal"><span class="badge-dot"></span>Success</span>
+            <span class="badge badge-amber"><span class="badge-dot"></span>Warning</span>
+            <span class="badge badge-gray"><span class="badge-dot"></span>Archived</span>
+            <span class="badge badge-purple">New</span>
+            <span class="badge badge-pink">Pro</span>
+            <span class="badge badge-teal">Live</span>
+          </div>
+        </div>
+        <div class="comp-info">
+          <div class="comp-name">Badges</div>
+          <div class="comp-desc">Status indicators and labels across 5 semantic color variants.</div>
+          <div class="comp-tags"><span class="comp-tag">status</span><span class="comp-tag">inline</span></div>
+        </div>
+      </div>
+
+      <!-- 4. TOGGLES -->
+      <div class="comp-card reveal">
+        <div class="comp-preview" style="padding: 1.5rem;">
+          <div class="toggles-demo">
+            <div class="toggle-row">
+              <div><div class="toggle-label">Notifications</div><div class="toggle-sub">Push & email alerts</div></div>
+              <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+            </div>
+            <div class="toggle-row">
+              <div><div class="toggle-label">Dark Mode</div><div class="toggle-sub">Always on by default</div></div>
+              <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+            </div>
+            <div class="toggle-row">
+              <div><div class="toggle-label">Analytics</div><div class="toggle-sub">Usage & performance</div></div>
+              <div class="toggle" onclick="this.classList.toggle('on')"></div>
+            </div>
+          </div>
+        </div>
+        <div class="comp-info">
+          <div class="comp-name">Toggle Switch</div>
+          <div class="comp-desc">Spring-physics animated toggles with accessible click targets.</div>
+          <div class="comp-tags"><span class="comp-tag">interactive</span><span class="comp-tag">form</span></div>
+        </div>
+      </div>
+
+      <!-- 5. INPUTS -->
+      <div class="comp-card reveal">
+        <div class="comp-preview" style="padding: 1.5rem;">
+          <div class="inputs-demo">
+            <div class="input-group">
+              <label class="input-label">Full Name</label>
+              <input type="text" class="c-input" placeholder="Jordan Davis">
+            </div>
+            <div class="input-group">
+              <label class="input-label">Email</label>
+              <input type="text" class="c-input" placeholder="hello@luminary.ui" value="hello@luminary.ui">
+            </div>
+            <div class="input-group input-error">
+              <label class="input-label">Password</label>
+              <input type="password" class="c-input" placeholder="••••••••">
+              <span class="input-hint">Must be at least 8 characters.</span>
+            </div>
+          </div>
+        </div>
+        <div class="comp-info">
+          <div class="comp-name">Inputs</div>
+          <div class="comp-desc">Text fields with animated focus rings, labels, and validation states.</div>
+          <div class="comp-tags"><span class="comp-tag">form</span><span class="comp-tag">validation</span></div>
+        </div>
+      </div>
+
+      <!-- 6. MODAL -->
+      <div class="comp-card reveal">
+        <div class="comp-preview" style="padding: 1.5rem;">
+          <div class="modal-demo">
+            <div class="modal-box">
+              <div class="modal-title">Delete workspace?</div>
+              <div class="modal-body">This will permanently delete your workspace and all its contents. This action cannot be undone.</div>
+              <div class="modal-actions">
+                <button class="modal-btn-cancel">Cancel</button>
+                <button class="modal-btn-confirm">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comp-info">
+          <div class="comp-name">Modal</div>
+          <div class="comp-desc">Confirmation and dialog modals with spring-pop entrance animation.</div>
+          <div class="comp-tags"><span class="comp-tag">overlay</span><span class="comp-tag">animated</span></div>
+        </div>
+      </div>
+
+      <!-- 7. LOADERS -->
+      <div class="comp-card reveal">
+        <div class="comp-preview">
+          <div class="loaders-demo" style="width:100%;">
+            <div class="progress-row">
+              <div class="progress-header"><span class="progress-label">Storage</span><span class="progress-pct">72%</span></div>
+              <div class="progress-track"><div class="progress-fill fill-purple" style="width:72%"></div></div>
+            </div>
+            <div class="progress-row">
+              <div class="progress-header"><span class="progress-label">Bandwidth</span><span class="progress-pct">45%</span></div>
+              <div class="progress-track"><div class="progress-fill fill-pink" style="width:45%"></div></div>
+            </div>
+            <div class="progress-row">
+              <div class="progress-header"><span class="progress-label">Compute</span><span class="progress-pct">89%</span></div>
+              <div class="progress-track"><div class="progress-fill fill-teal" style="width:89%"></div></div>
+            </div>
+            <div class="spinners-row">
+              <div class="spinner spinner-sm"></div>
+              <div class="spinner spinner-md"></div>
+              <div class="spinner spinner-lg"></div>
+              <div class="dots-loader"><div class="dot-ball"></div><div class="dot-ball"></div><div class="dot-ball"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="comp-info">
+          <div class="comp-name">Progress & Loaders</div>
+          <div class="comp-desc">Animated progress bars, spinners, and dot loaders in multiple sizes.</div>
+          <div class="comp-tags"><span class="comp-tag">feedback</span><span class="comp-tag">animated</span></div>
+        </div>
+      </div>
+
+      <!-- 8. TOOLTIP -->
+      <div class="comp-card reveal">
+        <div class="comp-preview">
+          <div class="tooltip-demo">
+            <div class="tooltip-wrap">
+              <div class="tooltip-target">Hover me</div>
+              <div class="tooltip-box">This is a tooltip ✦</div>
+            </div>
+            <div class="tooltip-wrap">
+              <div class="tooltip-target" style="background:rgba(124,106,255,0.1);border-color:rgba(124,106,255,0.3);color:#b0a8ff;">Info</div>
+              <div class="tooltip-box">Extra information here</div>
+            </div>
+            <div class="tooltip-wrap">
+              <div class="tooltip-target" style="background:rgba(106,240,200,0.08);border-color:rgba(106,240,200,0.2);color:#6af0c8;">Status</div>
+              <div class="tooltip-box">System operational ✓</div>
+            </div>
+          </div>
+        </div>
+        <div class="comp-info">
+          <div class="comp-name">Tooltip</div>
+          <div class="comp-desc">Hover-revealed tooltips with smooth fade + slide transitions.</div>
+          <div class="comp-tags"><span class="comp-tag">overlay</span><span class="comp-tag">UX</span></div>
+        </div>
+      </div>
+
+      <!-- 9. TOASTS -->
+      <div class="comp-card reveal">
+        <div class="comp-preview" style="padding: 1.25rem;">
+          <div class="toasts-demo">
+            <div class="toast toast-success">
+              <div class="toast-icon">✓</div>
+              <div class="toast-content"><div class="toast-title">Saved successfully</div><div class="toast-body">Your changes have been applied.</div></div>
+              <div class="toast-close">×</div>
+            </div>
+            <div class="toast toast-error">
+              <div class="toast-icon">!</div>
+              <div class="toast-content"><div class="toast-title">Upload failed</div><div class="toast-body">File size exceeds 5MB limit.</div></div>
+              <div class="toast-close">×</div>
+            </div>
+            <div class="toast toast-info">
+              <div class="toast-icon">i</div>
+              <div class="toast-content"><div class="toast-title">Update available</div><div class="toast-body">Version 2.0 is ready to install.</div></div>
+              <div class="toast-close">×</div>
+            </div>
+          </div>
+        </div>
+        <div class="comp-info">
+          <div class="comp-name">Toast Notifications</div>
+          <div class="comp-desc">Slide-in notification toasts for success, error, and info states.</div>
+          <div class="comp-tags"><span class="comp-tag">feedback</span><span class="comp-tag">animated</span></div>
+        </div>
+      </div>
+
+      <!-- 10. AVATARS -->
+      <div class="comp-card reveal">
+        <div class="comp-preview">
+          <div class="avatars-demo">
+            <div>
+              <div class="avatar-group">
+                <div class="av av1">JD</div>
+                <div class="av av2">SK</div>
+                <div class="av av3">MR</div>
+                <div class="av av4">AL</div>
+                <div class="av av5">PW</div>
+                <div class="av av-more">+8</div>
+              </div>
+              <div class="avatar-label" style="text-align:center;margin-top:8px;">13 team members</div>
+            </div>
+            <div class="avatar-group">
+              <div class="av av3" style="width:52px;height:52px;font-size:16px;">JD</div>
+              <div class="av av1" style="width:52px;height:52px;font-size:16px;">SK</div>
+              <div class="av av2" style="width:52px;height:52px;font-size:16px;">MR</div>
+            </div>
+          </div>
+        </div>
+        <div class="comp-info">
+          <div class="comp-name">Avatar Group</div>
+          <div class="comp-desc">Stacked avatars with hover lift, gradient fills, and overflow indicator.</div>
+          <div class="comp-tags"><span class="comp-tag">data</span><span class="comp-tag">team</span></div>
+        </div>
+      </div>
+
+      <!-- 11. SELECT -->
+      <div class="comp-card reveal">
+        <div class="comp-preview" style="padding:1.5rem;">
+          <div class="select-demo">
+            <div class="input-group">
+              <label class="input-label">Framework</label>
+              <div class="c-select-wrap">
+                <select class="c-select">
+                  <option>React</option><option>Vue</option><option>Svelte</option><option>Angular</option>
+                </select>
+                <span class="c-select-arrow">▼</span>
+              </div>
+            </div>
+            <div class="input-group">
+              <label class="input-label">Theme</label>
+              <div class="c-select-wrap">
+                <select class="c-select">
+                  <option>Dark (Default)</option><option>Light</option><option>System</option>
+                </select>
+                <span class="c-select-arrow">▼</span>
+              </div>
+            </div>
+            <div class="input-group">
+              <label class="input-label">Plan</label>
+              <div class="c-select-wrap">
+                <select class="c-select">
+                  <option>Free</option><option selected>Pro — $12/mo</option><option>Enterprise</option>
+                </select>
+                <span class="c-select-arrow">▼</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comp-info">
+          <div class="comp-name">Select</div>
+          <div class="comp-desc">Styled native selects with custom arrow and focus ring treatment.</div>
+          <div class="comp-tags"><span class="comp-tag">form</span><span class="comp-tag">input</span></div>
+        </div>
+      </div>
+
+      <!-- 12. METRICS -->
+      <div class="comp-card reveal">
+        <div class="comp-preview" style="padding:1.5rem;">
+          <div class="metrics-demo">
+            <div class="metric-card">
+              <div class="metric-label">Revenue</div>
+              <div class="metric-value" style="color:var(--accent3)">$48.2k</div>
+              <div class="metric-change metric-up">↑ 12.4% vs last month</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">Users</div>
+              <div class="metric-value" style="color:var(--accent)">8,241</div>
+              <div class="metric-change metric-up">↑ 5.1% this week</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">Churn</div>
+              <div class="metric-value" style="color:#ff7070">2.3%</div>
+              <div class="metric-change metric-down">↓ Higher than goal</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">NPS Score</div>
+              <div class="metric-value" style="color:var(--accent4)">72</div>
+              <div class="metric-change metric-up">↑ 8pts this quarter</div>
+            </div>
+          </div>
+        </div>
+        <div class="comp-info">
+          <div class="comp-name">Metric Cards</div>
+          <div class="comp-desc">KPI stat cards with color-coded trend indicators.</div>
+          <div class="comp-tags"><span class="comp-tag">data</span><span class="comp-tag">dashboard</span></div>
+        </div>
+      </div>
+
+      <!-- 13. SLIDER -->
+      <div class="comp-card reveal">
+        <div class="comp-preview" style="padding:1.5rem;">
+          <div class="slider-demo">
+            <div class="slider-row">
+              <div class="slider-row-header"><span>Volume</span><span class="slider-val" id="vol-val">68%</span></div>
+              <input type="range" class="c-range" min="0" max="100" value="68" oninput="document.getElementById('vol-val').textContent=this.value+'%'">
+            </div>
+            <div class="slider-row">
+              <div class="slider-row-header"><span>Brightness</span><span class="slider-val" id="br-val">40%</span></div>
+              <input type="range" class="c-range pink" min="0" max="100" value="40" oninput="document.getElementById('br-val').textContent=this.value+'%'">
+            </div>
+            <div class="slider-row">
+              <div class="slider-row-header"><span>Budget: <span class="slider-val" id="bud-val">$500</span></span></div>
+              <input type="range" class="c-range" min="100" max="2000" value="500" oninput="document.getElementById('bud-val').textContent='$'+this.value">
+            </div>
+          </div>
+        </div>
+        <div class="comp-info">
+          <div class="comp-name">Range Slider</div>
+          <div class="comp-desc">Custom-styled sliders with live value readout and glow thumb.</div>
+          <div class="comp-tags"><span class="comp-tag">form</span><span class="comp-tag">interactive</span></div>
+        </div>
+      </div>
+
+      <!-- 14. TABS -->
+      <div class="comp-card reveal">
+        <div class="comp-preview" style="padding:1.5rem;">
+          <div class="tabs-demo">
+            <div class="tabs-nav">
+              <button class="tab-btn active" onclick="activateTab(this,0)">Overview</button>
+              <button class="tab-btn" onclick="activateTab(this,1)">Analytics</button>
+              <button class="tab-btn" onclick="activateTab(this,2)">Settings</button>
+            </div>
+            <div class="tab-content" id="tab-content">
+              Get a high-level view of your project's performance, recent activity, and upcoming milestones all in one place.
+            </div>
+          </div>
+        </div>
+        <div class="comp-info">
+          <div class="comp-name">Tabs</div>
+          <div class="comp-desc">Pill-style tab navigation with smooth active state transitions.</div>
+          <div class="comp-tags"><span class="comp-tag">navigation</span><span class="comp-tag">layout</span></div>
+        </div>
+      </div>
+
+      <!-- 15. SKELETON -->
+      <div class="comp-card reveal">
+        <div class="comp-preview" style="padding:1.5rem;">
+          <div class="skeleton-demo">
+            <div class="skel-card">
+              <div class="skel skel-avatar"></div>
+              <div class="skel-lines">
+                <div class="skel skel-line skel-w-3q"></div>
+                <div class="skel skel-line skel-w-half"></div>
+              </div>
+            </div>
+            <div class="skel skel-block"></div>
+            <div class="skel-card">
+              <div class="skel skel-avatar"></div>
+              <div class="skel-lines">
+                <div class="skel skel-line skel-w-full"></div>
+                <div class="skel skel-line skel-w-3q"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comp-info">
+          <div class="comp-name">Skeleton Loader</div>
+          <div class="comp-desc">Shimmer-animated skeleton screens for content loading states.</div>
+          <div class="comp-tags"><span class="comp-tag">loading</span><span class="comp-tag">UX</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section" id="features">
+    <div class="reveal">
+      <span class="section-tag">Why Luminary</span>
+      <h2 class="section-title">Built for real<br>production work.</h2>
+      <p class="section-sub">Not another pretty prototype. Every component is ready to ship.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon" style="background:rgba(124,106,255,0.12);">⚡</div>
+        <div class="feature-title">Zero Dependencies</div>
+        <div class="feature-text">Pure CSS animations and vanilla JS interactions. No runtime bloat, no version conflicts.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon" style="background:rgba(106,240,200,0.1);">♿</div>
+        <div class="feature-title">Accessible First</div>
+        <div class="feature-text">WCAG 2.1 AA compliant. Proper ARIA roles, keyboard navigation, and focus management built in.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon" style="background:rgba(255,106,155,0.1);">🎨</div>
+        <div class="feature-title">Themeable</div>
+        <div class="feature-text">Token-based design system. Override any CSS variable to match your brand in seconds.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon" style="background:rgba(255,184,106,0.1);">📦</div>
+        <div class="feature-title">Framework Agnostic</div>
+        <div class="feature-text">Works with React, Vue, Svelte, Angular, or just HTML. Bring your own toolchain.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon" style="background:rgba(124,106,255,0.12);">🌙</div>
+        <div class="feature-title">Dark by Default</div>
+        <div class="feature-text">Designed in dark mode first. Light mode support via a single class swap on the root element.</div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon" style="background:rgba(106,240,200,0.1);">✨</div>
+        <div class="feature-title">Motion Design</div>
+        <div class="feature-text">Purposeful animations with spring physics. Every interaction feels alive and intentional.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner reveal">
+      <h2 class="cta-title">Start building<br><span class="gradient-text">today.</span></h2>
+      <p class="cta-sub">Copy any component in one click. No installation required to get started.</p>
+      <div class="cta-btns">
+        <button class="btn-big btn-big-accent">Browse Components →</button>
+        <button class="btn-big btn-big-outline">⭐ Star on GitHub</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="nav-logo">Luminary UI</div>
+    <div class="footer-links">
+      <a href="#">Docs</a>
+      <a href="#">GitHub</a>
+      <a href="#">npm</a>
+      <a href="#">Twitter</a>
+    </div>
+    <span>MIT License · Made with ♥</span>
+  </footer>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+/*
+ * tokens.css
+ * Design tokens for Luminary UI.
+ * Override any variable here to retheme the entire library.
+ *
+ * Font stack:
+ *   Headings  → Space Grotesk (400, 500, 600, 700)
+ *   Body      → Manrope (300, 400, 500, 600)
+ */
+
+:root {
+  /* ── Backgrounds ── */
+  --bg:      #0a0a0f;
+  --bg2:     #111118;
+  --bg3:     #18181f;
+
+  /* ── Borders ── */
+  --border:  rgba(255, 255, 255, 0.07);
+  --border2: rgba(255, 255, 255, 0.12);
+
+  /* ── Typography ── */
+  --text:    #f0f0f5;
+  --muted:   #7a7a8a;
+
+  /* ── Accent palette ── */
+  --accent:  #7c6aff;   /* purple  */
+  --accent2: #ff6a9b;   /* pink    */
+  --accent3: #6af0c8;   /* teal    */
+  --accent4: #ffb86a;   /* amber   */
+
+  /* ── Glow / shadow ── */
+  --glow:    rgba(124, 106, 255, 0.2);
+
+  /* ── Font families ── */
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body:    'Manrope', sans-serif;
+}
