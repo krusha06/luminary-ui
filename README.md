@@ -103,4 +103,4 @@ MIT — use freely in personal and commercial projects.
 
 ---
 
-Made with ♥ by [your name](https://github.com/yourusername)
+Made with ♥ by Krusha(https://github.com/krusha06)
